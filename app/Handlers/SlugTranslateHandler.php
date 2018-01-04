@@ -11,7 +11,6 @@ class SlugTranslateHandler
     {
         // 实例化 HTTP 客户端
         $http = new Client;
-
         // 初始化配置信息
         $api = 'http://api.fanyi.baidu.com/api/trans/vip/translate?';
         $appid = config('services.baidu_translate.appid');
