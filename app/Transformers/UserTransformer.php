@@ -24,7 +24,7 @@ class UserTransformer extends TransformerAbstract
             'updated_at' => $user->updated_at->toDateTimeString(),
         ];
     }
-    
+
     public function includeRoles(User $user)
     {
         return $this->collection($user->roles, new RoleTransformer());
