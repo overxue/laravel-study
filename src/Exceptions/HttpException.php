@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Weather\Exceptions;
+namespace Overxue\Weather\Exceptions;
 
 class HttpException extends Exception
 {

@@ -2,13 +2,11 @@
 
 namespace Overxue\Weather;
 
-namespace Overtrue\Weather;
-
 use GuzzleHttp\Client;
-use Overtrue\Weather\Exceptions\HttpException;
-use Overtrue\Weather\Exceptions\InvalidArgumentException;
+use Overxue\Weather\Exceptions\HttpException;
+use Overxue\Weather\Exceptions\InvalidArgumentException;
 
-class Weater
+class Weather
 {
     protected $key;
     protected $guzzleOptions = [];
@@ -31,7 +29,6 @@ class Weater
     public function getWeather($city, string $type = 'base', string $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
-
         if (!\in_array(\strtolower($format), ['xml', 'json'])) {
             throw new InvalidArgumentException('Invalid response format: '.$format);
         }
