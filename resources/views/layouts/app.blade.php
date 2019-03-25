@@ -14,7 +14,7 @@
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-  @yield('stylus')
+  @yield('styles')
 
 </head>
 
