@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ad8d23-6aab-4d20-9a39-655ede4deba3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/debugbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/debugbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,38 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1576">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env.example" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env.example">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/api.php">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2999">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="248">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debugbar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/debugbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -90,8 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" />
-        <option value="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Topic.php" />
         <option value="$PROJECT_DIR$/app/Observers/ReplyObserver.php" />
         <option value="$PROJECT_DIR$/app/Observers/TopicObserver.php" />
@@ -141,6 +117,8 @@
         <option value="$PROJECT_DIR$/app/Observers/UserObserver.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/config/debugbar.php" />
       </list>
     </option>
   </component>
@@ -297,6 +275,11 @@
               <item name="laravel-study" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="laravel-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-study" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -350,12 +333,12 @@
       <workItem from="1553776165533" duration="5216000" />
       <workItem from="1553857160599" duration="599000" />
       <workItem from="1553945189544" duration="4304000" />
-      <workItem from="1553996943452" duration="9072000" />
+      <workItem from="1553996943452" duration="9536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82760000" />
+    <option name="totallyTimeSpent" value="83224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -389,20 +372,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/administrator/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator/permissions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/administrator/roles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1220">
@@ -744,10 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/api.php">
+    <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2999">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="680">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -758,10 +727,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
+    <entry file="file://$PROJECT_DIR$/config/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="-2999">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/debugbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
