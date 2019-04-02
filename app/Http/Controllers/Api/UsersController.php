@@ -20,11 +20,10 @@ class UsersController extends Controller
             return $this->response->errorUnauthorized('验证码错误');
         }
 
-        $user->fill($request->all());
+        $user->name = $request->input('name');
         $user->phone = $verifyData['phone'];
         $user->password = bcrypt($request->input('password'));
         $user->save();
-
         // 清除验证码缓存
         \Cache::forget($request->input('verification_key'));
 
