@@ -19,7 +19,6 @@ class UsersController extends Controller
         if (!hash_equals($verifyData['code'], $request->input('verification_code'))) {
             return $this->response->errorUnauthorized('验证码错误');
         }
-
         $user->name = $request->input('name');
         $user->phone = $verifyData['phone'];
         $user->password = bcrypt($request->input('password'));
