@@ -69,7 +69,12 @@ class AuthorizationsController extends Controller
         if (!$token = Auth::guard('api')->attempt($credentials)) {
             return $this->response->errorUnauthorized('用户名或密码错误');
         }
-
+        $user = Auth::guard('api')->user();
+        if ($user->jwt_token) {
+            \JWTAuth::setToken($user->jwt_token)->invalidate();
+        }
+        $user->jwt_token = $token;
+        $user->save();
         return $this->responseWithToken($token)->setStatusCode(201);
     }
 
