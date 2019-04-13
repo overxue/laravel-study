@@ -40,6 +40,10 @@ $api->version('v1', [
         $api->group(['middleware' => 'api.auth'], function($api) {
             // 当前登录用户信息
             $api->get('user', 'UsersController@me');
+            // 编辑登录用户信息
+            $api->patch('user', 'UsersController@update');
+            // 图片资源
+            $api->post('images', 'ImagesController@store');
         });
     });
 });

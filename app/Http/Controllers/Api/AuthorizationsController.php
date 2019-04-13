@@ -72,7 +72,10 @@ class AuthorizationsController extends Controller
 
         $user = Auth::guard('api')->user();
         if ($user->jwt_token) {
-            \JWTAuth::setToken($user->jwt_token)->invalidate();
+            // 检查 token 是否有效
+            if (\JWTAuth::setToken($user->jwt_token)->check()) {
+                \JWTAuth::setToken($user->jwt_token)->invalidate();
+            }
         }
         $user->jwt_token = $token;
         $user->save();
