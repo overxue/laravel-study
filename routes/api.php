@@ -48,6 +48,8 @@ $api->version('v1', [
             $api->post('topics', 'TopicsController@store');
             // 修改话题
             $api->patch('topics/{topic}', 'TopicsController@update');
+            // 删除话题
+            $api->delete('topics/{topic}', 'TopicsController@destroy');
         });
     });
 });
