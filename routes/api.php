@@ -44,6 +44,8 @@ $api->version('v1', [
             $api->patch('user', 'UsersController@update');
             // 图片资源
             $api->post('images', 'ImagesController@store');
+            // 发布话题
+            $api->post('topics', 'TopicsController@store');
         });
     });
 });
