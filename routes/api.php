@@ -54,6 +54,8 @@ $api->version('v1', [
             $api->patch('topics/{topic}', 'TopicsController@update');
             // 删除话题
             $api->delete('topics/{topic}', 'TopicsController@destroy');
+            // 发布话题
+            $api->post('topics/{topic}/replies', 'RepliesController@store');
         });
     });
 });
