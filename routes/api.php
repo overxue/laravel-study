@@ -65,6 +65,8 @@ $api->version('v1', [
             $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy');
             // 通知列表
             $api->get('user/notifications', 'NotificationsController@index');
+            // 通知统计
+            $api->get('user/notifications/stats', 'NotificationsController@stats');
         });
     });
 });
