@@ -67,6 +67,8 @@ $api->version('v1', [
             $api->get('user/notifications', 'NotificationsController@index');
             // 通知统计
             $api->get('user/notifications/stats', 'NotificationsController@stats');
+            // 标记通知消息为已读
+            $api->patch('user/read/notifications', 'NotificationsController@read');
         });
     });
 });
