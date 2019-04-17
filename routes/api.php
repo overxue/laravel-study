@@ -69,6 +69,8 @@ $api->version('v1', [
             $api->get('user/notifications/stats', 'NotificationsController@stats');
             // 标记通知消息为已读
             $api->patch('user/read/notifications', 'NotificationsController@read');
+            // 当前登录用户权限
+            $api->get('user/permissions', 'PermissionsController@index');
         });
     });
 });
