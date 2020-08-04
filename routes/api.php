@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 
 Route::prefix('v1')->name('api.v1.')->group(function () {
     // 短信验证码
-    Route::post('verificationCodes', 'api\VerificationCodesController@store')
-        ->name('verificationCodes.store');
+    Route::post('verificationCodes', 'api\VerificationCodesController@store')->name('verificationCodes.store');
+    // 用户注册
+    Route::post('users', 'api\UsersController@store')->name('users.store');    
 });
