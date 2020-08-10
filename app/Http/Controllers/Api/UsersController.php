@@ -45,4 +45,21 @@ class UsersController extends Controller
         // dd(\Auth::guard('api')->user());
          return (new UserResource($request->user()))->showSensitiveFields();
     }
+
+    public function update(UserRequest $request)
+    {
+        $user = $request->user();
+
+        $attributes = $request->only(['name', 'email', 'introduction']);
+
+        if ($request->avatar_image_id) {
+            $image = Image::find($request->avatar_image_id);
+
+            $attributes['avatar'] = $image->path;
+        }
+
+        $user->update($attributes);
+
+        return (new UserResource($user))->showSensitiveFields();
+    }
 }
