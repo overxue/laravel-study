@@ -2,7 +2,7 @@
 
 
 
-use App\Http\Controllers\PagesController;
+// use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,6 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'PagesController@root')->name('root');
 
-Route::get('/', [PagesController::class, 'root']);
+// Route::get('/', [PagesController::class, 'root']);
