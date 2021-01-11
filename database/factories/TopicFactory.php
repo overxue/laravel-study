@@ -17,6 +17,7 @@ class TopicFactory extends Factory
             'title' => $sentence,
             'body' => $this->faker->text(),
             'excerpt' => $sentence,
+            'slug' => $sentence,
             'user_id' => $this->faker->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             'category_id' => $this->faker->randomElement([1, 2, 3, 4]),
         ];
