@@ -26,7 +26,7 @@
     // 危险写法：~0.1 等于 0.1.0 <= 版本号 <1.0.0
     // 保险写法：^0.1 等于 0.1.0 <= 版本号 <0.2.0
 
-Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 
 // 用户身份验证相关的路由
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
