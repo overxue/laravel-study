@@ -53,6 +53,7 @@ class User extends Authenticatable implements MustVerifyEmailContract, JWTSubjec
         'weixin_unionid',
     ];
 
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -61,6 +62,8 @@ class User extends Authenticatable implements MustVerifyEmailContract, JWTSubjec
     protected $hidden = [
         'password',
         'remember_token',
+        'weixin_openid',
+        'weixin_unionid',
     ];
 
     /**
