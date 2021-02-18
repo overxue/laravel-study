@@ -101,4 +101,11 @@ return [
         ],
     ],
 
+    'query' => [
+        'enabled' => env('LOG_QUERY', env('APP_ENV') === 'local'),
+        // Only record queries that are slower than the following time
+        // Unit: milliseconds
+        'slower_than' => 0, 
+    ],
+
 ];
